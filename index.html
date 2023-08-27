@@ -30,11 +30,11 @@
         const dbRef = ref(getDatabase());  //getting reference information
 
         get(child(dbRef, 'temperature'))
-        .then((snapshot) => document.getElementById('tempValue').innerHTML = snapshot.val())
+        .then((snapshot) => document.getElementById('tempVal').innerHTML = snapshot.val())
         .catch((error)=>console.log(error))
 
         get(child(dbRef, 'humidity'))
-        .then((snapshot) => document.getElementById('humidityValue').innerHTML = snapshot.val())
+        .then((snapshot) => document.getElementById('humidityVal').innerHTML = snapshot.val())
         .catch((error)=>console.log(error))
 
       </script>
